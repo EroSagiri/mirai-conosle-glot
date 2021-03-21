@@ -6,7 +6,7 @@ plugins {
     id("net.mamoe.mirai-console") version "2.4.1"
 }
 
-group = "org.example"
+group = "me.sagiri.mirai"
 version = "0.1.0"
 
 repositories {
@@ -14,4 +14,9 @@ repositories {
     maven("https://maven.aliyun.com/repository/public") // 阿里云国内代理仓库
     mavenCentral()
     jcenter()
+}
+
+dependencies {
+    implementation(group = "org.json", name = "json", version = "20210307")
+    implementation(group="com.github.kevinsawicki", version="6.0", name = "http-request")
 }
